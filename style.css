@@ -1,0 +1,62 @@
+/* ===== GENERAL ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin: 0 0 15px;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #1a1a1a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 40px 20px;
+}
+
+.section.alt {
+  background: #f0f0f0;
+}
+
+/* ===== SKILLS ===== */
+.skills span {
+  background: #eee;
+  margin: 4px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a1a1a;
+  color: white;
+}
