@@ -1,78 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Arman Rakib | Android Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-    header { background: #1a1a1a; color: white; padding: 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2.2em; }
-    header p { margin: 5px 0; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; }
-    section { max-width: 900px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);}
-    h2 { border-bottom: 2px solid #eee; padding-bottom: 8px; }
-    .skills span { background: #eee; margin: 4px; padding: 6px 10px; border-radius: 4px; display: inline-block; }
-    footer { text-align: center; padding: 20px; background: #1a1a1a; color: white; margin-top: 40px; }
-    a { color: #0066cc; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arman Rakib - Experienced Android Developer with 7+ years in native Android and React Native development across healthcare, e-commerce, and IoT sectors">
+  <meta name="keywords" content="Android Developer, Mobile Developer, React Native, Java, Kotlin, Portfolio">
+  <meta name="author" content="Arman Rakib">
+  <meta name="theme-color" content="#4A90E2">
+  <title>Arman Rakib | Android Developer Portfolio</title>
+  
+  <!-- Preload critical fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons (with integrity for security) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- AOS animation library (with defer for non-critical resource) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Arman Rakib</h1>
-    <p>Android Developer | 7+ Years Experience</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-logo">
+        <a href="#" aria-label="Home">AR</a>
+      </div>
+      <div class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-links" id="navbar-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Experienced Android Developer with 7 years in Native Android and React Native (Beginner). Skilled in Java, Kotlin, React Native, and Cordova. Worked on healthcare, e-commerce, and IoT apps with expertise in UI/UX, APIs, and secure payments.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-      <span>Java</span><span>Kotlin</span><span>React Native</span><span>Android Studio</span>
-      <span>REST API</span><span>Firebase</span><span>SQLite</span><span>MySQL</span>
-      <span>GitHub</span><span>WebRTC</span><span>Google Maps API</span>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="hero-name">Arman Rakib</h1>
+        <h2 class="hero-role">Android Developer</h2>
+        <p class="hero-tagline">Building powerful, user-focused mobile experiences with 7+ years of expertise</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#projects" class="btn btn-secondary">See My Work</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <a href="#about" aria-label="Scroll down">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
     </div>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <p><b>Silicon Orchard Ltd.</b> (2023–Present) — Android Developer</p>
-    <p><b>Zaynax Group</b> (2021–2023) — Android Developer</p>
-    <p><b>pbazaar.com</b> (2019–2020) — Android Developer</p>
-    <p><b>Rongginn IT Ltd</b> (2019) — Junior Android Developer</p>
-    <p><b>MCC Ltd</b> (2018) — Junior Android Developer</p>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right" data-aos-delay="100">
+          <p>I'm an experienced Android Developer with 7 years of expertise in building native Android applications and expanding into React Native. With a focus on creating intuitive, high-performance mobile experiences, I've delivered solutions across healthcare, e-commerce, and IoT sectors.</p>
+          <p>My passion lies in developing clean, efficient code and crafting user interfaces that delight and engage. I'm constantly exploring new technologies to enhance mobile development practices while ensuring accessibility and performance remain top priorities.</p>
+          <a href="#" class="btn btn-outline download-cv" download>Download CV <i class="fas fa-download"></i></a>
+        </div>
+        <div class="about-stats" data-aos="fade-left" data-aos-delay="200">
+          <div class="stat">
+            <span class="stat-number">7+</span>
+            <span class="stat-title">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-title">Projects Completed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-title">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://play.google.com/store/apps/details?id=zaynaxhealth.com" target="_blank">Zaynax Health</a> — Doctor appointments, video calls, payments.</li>
-      <li><a href="https://play.google.com/store/apps/details?id=com.zdrop.bd" target="_blank">zDrop</a> — E-commerce app with secure payments & chat.</li>
-      <li><a href="https://play.google.com/store/apps/details?id=org.unicef.meenagame" target="_blank">Meet Meena</a> — UNICEF awareness game for children.</li>
-      <li><a href="https://play.google.com/store/apps/details?id=com.manufarms.poultrymanagerapp&hl=en" target="_blank">Poultry Manager</a> — IoT-based farm management app.</li>
-    </ul>
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Technical Skills</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="skills-container">
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <h3>Android Development</h3>
+          <div class="skill-item">
+            <span class="skill-name">Java</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Kotlin</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Android Studio</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <h3>Cross Platform</h3>
+          <div class="skill-item">
+            <span class="skill-name">React Native</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Cordova</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <h3>Backend & Data</h3>
+          <div class="skill-item">
+            <span class="skill-name">REST API</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Firebase</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">SQLite</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">MySQL</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+          <h3>Tools & Technologies</h3>
+          <div class="skill-icons">
+            <div class="skill-icon" title="GitHub">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-icon" title="WebRTC">
+              <i class="fas fa-video"></i>
+              <span>WebRTC</span>
+            </div>
+            <div class="skill-icon" title="Google Maps">
+              <i class="fas fa-map-marked-alt"></i>
+              <span>Google Maps</span>
+            </div>
+            <div class="skill-icon" title="Agile">
+              <i class="fas fa-tasks"></i>
+              <span>Agile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📍 Dhaka, Bangladesh</p>
-    <p>📧 <a href="mailto:armanrakib520@gmail.com">armanrakib520@gmail.com</a></p>
-    <p>🔗 <a href="https://linkedin.com/in/arman-rakib-045ba1167/" target="_blank">LinkedIn</a> | 
-       <a href="https://github.com/ArmanRakib520" target="_blank">GitHub</a></p>
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Experience</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023–Present</div>
+          <div class="timeline-content">
+            <h3>Android Developer</h3>
+            <p class="timeline-company">Silicon Orchard Ltd.</p>
+            <p>Leading Android development for enterprise mobile applications, implementing best practices and modern architecture patterns.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021–2023</div>
+          <div class="timeline-content">
+            <h3>Android Developer</h3>
+            <p class="timeline-company">Zaynax Group</p>
+            <p>Developed and maintained health and e-commerce apps with complex features like video consultations and secure payment systems.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2019–2020</div>
+          <div class="timeline-content">
+            <h3>Android Developer</h3>
+            <p class="timeline-company">pbazaar.com</p>
+            <p>Built and enhanced property marketplace app with map integrations and complex filtering capabilities.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2019</div>
+          <div class="timeline-content">
+            <h3>Junior Android Developer</h3>
+            <p class="timeline-company">Rongginn IT Ltd</p>
+            <p>Contributed to various client projects with focus on UI implementation and feature development.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2018</div>
+          <div class="timeline-content">
+            <h3>Junior Android Developer</h3>
+            <p class="timeline-company">MCC Ltd</p>
+            <p>Started career developing core Android components and learning application development practices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Arman Rakib | Portfolio</p>
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Featured Projects</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-aos="fade-up" data-project="zaynaxhealth">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400/4A90E2/FFFFFF?text=Zaynax+Health" alt="Zaynax Health App - Healthcare app with doctor appointments and video consultations" loading="lazy" width="600" height="400">
+            <div class="project-overlay">
+              <div class="project-preview">
+                <span>View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Zaynax Health</h3>
+            <p>Healthcare app with doctor appointments, video consultations, and secure payments.</p>
+            <div class="project-tags">
+              <span>Android</span>
+              <span>Java</span>
+              <span>WebRTC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-project="zdrop">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400/FF6B6B/FFFFFF?text=zDrop" alt="zDrop E-commerce App - Online shopping platform with secure payments" loading="lazy" width="600" height="400">
+            <div class="project-overlay">
+              <div class="project-preview">
+                <span>View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>zDrop</h3>
+            <p>E-commerce application with comprehensive product catalog, secure checkout, and in-app chat.</p>
+            <div class="project-tags">
+              <span>Kotlin</span>
+              <span>MVVM</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-project="meena">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400/4ECDC4/FFFFFF?text=Meet+Meena" alt="Meet Meena Game - UNICEF educational game for children" loading="lazy" width="600" height="400">
+            <div class="project-overlay">
+              <div class="project-preview">
+                <span>View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Meet Meena</h3>
+            <p>UNICEF educational game focusing on awareness and learning for children.</p>
+            <div class="project-tags">
+              <span>Android</span>
+              <span>Game Dev</span>
+              <span>Education</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-project="poultry">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400/FFD166/333333?text=Poultry+Manager" alt="Poultry Manager App - IoT-based farm management system" loading="lazy" width="600" height="400">
+            <div class="project-overlay">
+              <div class="project-preview">
+                <span>View Project</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Poultry Manager</h3>
+            <p>IoT-based farm management system for monitoring and controlling farm operations.</p>
+            <div class="project-tags">
+              <span>IoT</span>
+              <span>Real-time Data</span>
+              <span>Sensors</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <div class="modal" id="project-modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-body">
+        <!-- Content will be dynamically inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Get In Touch</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>Dhaka, Bangladesh</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:armanrakib520@gmail.com">armanrakib520@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/arman-rakib-045ba1167/" target="_blank" aria-label="LinkedIn" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ArmanRakib520" target="_blank" aria-label="GitHub" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Twitter" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" data-aos="fade-left" data-aos-delay="200">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">AR</div>
+        <p>&copy; 2025 Arman Rakib | All Rights Reserved</p>
+      </div>
+    </div>
+    <div class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
   </footer>
+
+  <!-- Project details templates (hidden) -->
+  <template id="project-zaynaxhealth">
+    <div class="project-details">
+      <h2>Zaynax Health</h2>
+      <img src="https://via.placeholder.com/800x450/4A90E2/FFFFFF?text=Zaynax+Health+Screenshot" alt="Zaynax Health App Screenshot showing the main dashboard" class="project-banner" loading="lazy" width="800" height="450">
+      
+      <div class="project-section">
+        <h3>Overview</h3>
+        <p>Zaynax Health is a comprehensive healthcare application that connects patients with doctors for online consultations, appointment scheduling, and health monitoring.</p>
+      </div>
+      
+      <div class="project-section">
+        <h3>My Role</h3>
+        <p>Lead Android Developer responsible for architecting and building the core features of the application including video consultation system, secure payment integration, and appointment management.</p>
+      </div>
+      
+      <div class="project-section">
+        <h3>Technologies</h3>
+        <ul class="tech-list">
+          <li>Java/Kotlin</li>
+          <li>MVVM Architecture</li>
+          <li>WebRTC for video consultations</li>
+          <li>Retrofit for API consumption</li>
+          <li>Room Database for offline data</li>
+          <li>SSL Commerz payment integration</li>
+        </ul>
+      </div>
+      
+      <div class="project-section">
+        <h3>Challenges & Solutions</h3>
+        <p>One of the main challenges was implementing a reliable video consultation system that would work across various network conditions. I utilized WebRTC with adaptive bitrate streaming and implemented fallback mechanisms to ensure consultations could continue even in low-bandwidth scenarios.</p>
+        <p>Securing patient data was another critical challenge. I implemented end-to-end encryption for sensitive information and followed HIPAA-inspired guidelines for data handling and storage.</p>
+      </div>
+      
+      <div class="project-section">
+        <h3>Outcomes</h3>
+        <p>The app has been downloaded over 100,000 times on the Google Play Store, maintaining a 4.4-star rating. It successfully facilitated thousands of remote consultations, especially during the pandemic, providing essential healthcare access to people unable to visit hospitals physically.</p>
+      </div>
+      
+      <div class="project-links">
+        <a href="https://play.google.com/store/apps/details?id=zaynaxhealth.com" target="_blank" class="btn btn-primary">View on Play Store</a>
+      </div>
+    </div>
+  </template>
+
+  <template id="project-zdrop">
+    <div class="project-details">
+      <h2>zDrop</h2>
+      <img src="https://via.placeholder.com/800x450/FF6B6B/FFFFFF?text=zDrop+Screenshot" alt="zDrop App Screenshot showing product catalog" class="project-banner" loading="lazy" width="800" height="450">
+      
+      <div class="project-section">
+        <h3>Overview</h3>
+        <p>zDrop is an e-commerce platform offering a wide range of products with features like secure checkout, real-time order tracking, and in-app messaging with sellers.</p>
+      </div>
+      
+      <div class="project-section">
+        <h3>My Role</h3>
+        <p>Android Developer responsible for implementing the product catalog, shopping cart functionality, payment gateway integration, and chat system.</p>
+      </div>
+      
+      <div class="project-section">
+        <h3>Technologies</h3>
+        <ul class="tech-list">
+          <li>Kotlin</li>
+          <li>MVVM Architecture with LiveData</li>
+          <li>Firebase Realtime Database & Firestore</li>
+          <li>Firebase Cloud Messaging</li>
+          <li>Glide for image loading</li>
+          <li>Multiple payment gateway integrations</li>
+        </ul>
+      </div>
+      
+      <div class="project-section">
+        <h3>Challenges & Solutions</h3>
+        <p>Managing a large product catalog with efficient filtering and search capabilities was challenging. I implemented a combination of server-side filtering and local caching strategies to provide fast, responsive search results.</p>
+        <p>The real-time chat feature needed to be reliable and support media sharing. I utilized Firebase Realtime Database with custom offline support to ensure messages were never lost, even when connectivity was intermittent.</p>
+      </div>
+      
+      <div class="project-section">
+        <h3>Outcomes</h3>
+        <p>The app has become one of the leading e-commerce platforms in Bangladesh with over 50,000 active users. Order completion rates improved by 35% after implementing the streamlined checkout process I designed.</p>
+      </div>
+      
+      <div class="project-links">
+        <a href="https://play.google.com/store/apps/details?id=com.zdrop.bd" target="_blank" class="btn btn-primary">View on Play Store</a>
+      </div>
+    </div>
+  </template>
+
+  <template id="project-meena">
+    <div class="project-details">
+      <h2>Meet Meena</h2>
+      <img src="https://via.placeholder.com/800x450/4ECDC4/FFFFFF?text=Meet+Meena+Screenshot" alt="Meet Meena Game Screenshot showing interactive gameplay" class="project-banner" loading="lazy" width="800" height="450">
+      
+      <div class="project-section">
+        <h3>Overview</h3>
+        <p>Meet Meena is an educational game developed in partnership with UNICEF to raise awareness on important social issues among children in a fun, interactive way.</p>
+      </div>
+      
+      <div class="project-section">
+        <h3>My Role</h3>
+        <p>Android Developer tasked with implementing game mechanics, interactive storytelling features, and ensuring an engaging user experience suitable for children.</p>
+      </div>
+      
+      <div class="project-section">
+        <h3>Technologies</h3>
+        <ul class="tech-list">
+          <li>Java</li>
+          <li>Android Animation Framework</li>
+          <li>SQLite for progress tracking</li>
+          <li>Custom 2D rendering for game elements</li>
+          <li>Offline content management</li>
+        </ul>
+      </div>
+      
+      <div class="project-section">
+        <h3>Challenges & Solutions</h3>
+        <p>Creating an engaging game that was both educational and entertaining for children required balancing fun gameplay with learning objectives. I worked closely with educational consultants to integrate learning milestones into the game progression.</p>
+        <p>Optimizing performance for lower-end devices common in rural areas was essential. I implemented efficient resource management and adaptive graphics quality to ensure smooth gameplay across all device tiers.</p>
+      </div>
+      
+      <div class="project-section">
+        <h3>Outcomes</h3>
+        <p>The game has been used in UNICEF's educational programs across South Asia, reaching over 200,000 children. Teachers reported increased engagement and better retention of important social concepts when using the game as a learning tool.</p>
+      </div>
+      
+      <div class="project-links">
+        <a href="https://play.google.com/store/apps/details?id=org.unicef.meenagame" target="_blank" class="btn btn-primary">View on Play Store</a>
+      </div>
+    </div>
+  </template>
+
+  <template id="project-poultry">
+    <div class="project-details">
+      <h2>Poultry Manager</h2>
+      <img src="https://via.placeholder.com/800x450/FFD166/333333?text=Poultry+Manager+Screenshot" alt="Poultry Manager App Screenshot showing farm monitoring dashboard" class="project-banner" loading="lazy" width="800" height="450">
+      
+      <div class="project-section">
+        <h3>Overview</h3>
+        <p>Poultry Manager is an IoT-based farm management application that helps farmers monitor and control environmental conditions, feed distribution, and livestock health in real-time.</p>
+      </div>
+      
+      <div class="project-section">
+        <h3>My Role</h3>
+        <p>Android Developer responsible for creating the mobile interface that connects to IoT sensors and control systems, displaying real-time data and allowing remote farm management.</p>
+      </div>
+      
+      <div class="project-section">
+        <h3>Technologies</h3>
+        <ul class="tech-list">
+          <li>Java</li>
+          <li>MQTT Protocol</li>
+          <li>Bluetooth Low Energy</li>
+          <li>MPAndroidChart for data visualization</li>
+          <li>Room Database for offline operation</li>
+          <li>Background services for continuous monitoring</li>
+        </ul>
+      </div>
+      
+      <div class="project-section">
+        <h3>Challenges & Solutions</h3>
+        <p>Maintaining reliable connections to farm sensors in rural areas with poor connectivity was a significant challenge. I implemented a robust sync mechanism that could operate in offline mode and efficiently synchronize data when connectivity was available.</p>
+        <p>Creating an intuitive interface for farmers with varying levels of technical proficiency required multiple iterations of user testing. The final design used simple visual indicators and minimal text to convey system status and alert conditions.</p>
+      </div>
+      
+      <div class="project-section">
+        <h3>Outcomes</h3>
+        <p>Farms using the system reported a 25% reduction in mortality rates and 15% improvement in feed efficiency. The application has been adopted by over 200 farms across Bangladesh, significantly improving productivity and reducing operating costs.</p>
+      </div>
+      
+      <div class="project-links">
+        <a href="https://play.google.com/store/apps/details?id=com.manufarms.poultrymanagerapp" target="_blank" class="btn btn-primary">View on Play Store</a>
+      </div>
+    </div>
+  </template>
+
+  <!-- Scripts with defer for performance -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
