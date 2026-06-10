@@ -6,751 +6,438 @@
   <meta name="description" content="Arman Rakib - Senior Mobile Application Developer with 8+ years delivering scalable, secure mobile apps across healthcare, e-commerce, IoT, POS, AI, and social media domains">
   <meta name="keywords" content="Senior Mobile Developer, Android Developer, React Native, Kotlin, Java, TypeScript, Portfolio">
   <meta name="author" content="Arman Rakib">
-  <meta name="theme-color" content="#4A90E2">
   <title>Arman Rakib | Senior Mobile Application Developer</title>
-  
-  <!-- Preload critical fonts -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome for icons (with integrity for security) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  
-  <!-- AOS animation library (with defer for non-critical resource) -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  
-  <!-- Custom styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="navbar-logo">
-        <a href="#" aria-label="Home">AR</a>
+
+  <!-- Background Effects -->
+  <div class="bg-effects">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="noise"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar glass">
+    <div class="nav-container">
+      <a href="#home" class="logo">AR<span>.</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </div>
+      <a href="mailto:armanrakib520@gmail.com" class="btn btn-outline nav-cta">Let's Talk</a>
       <div class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-      <ul class="navbar-links" id="navbar-links">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container">
-      <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-        <h1 class="hero-name">Arman Rakib</h1>
-        <h2 class="hero-role">Senior Mobile Application Developer</h2>
-        <p class="hero-tagline">Building scalable, secure, and high-performance mobile apps with 8+ years of expertise</p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">Get in Touch</a>
-          <a href="#projects" class="btn btn-secondary">See My Work</a>
-        </div>
-      </div>
-      <div class="hero-scroll-indicator">
-        <a href="#about" aria-label="Scroll down">
-          <i class="fas fa-chevron-down"></i>
-        </a>
-      </div>
-    </div>
-  </section>
+  <main>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2>About Me</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="about-content">
-        <div class="about-text" data-aos="fade-right" data-aos-delay="100">
-          <p>I'm a Senior Mobile Application Developer with 8+ years of expertise delivering scalable, secure, and high-performance apps across healthcare, e-commerce, IoT, POS, AI, and social media domains. Proficient in Kotlin, Java, and React Native (TypeScript/JavaScript) with deep expertise in MVVM, SOLID principles, REST API integration, BLE device communication, and secure payment systems.</p>
-          <p>I've led full SDLC projects from concept to deployment, achieving 100% on-time delivery, and successfully published apps on Google Play Console and Apple App Store. Recognized for mentoring teams, driving code quality, and optimizing user experiences through rigorous testing and innovative problem-solving.</p>
-          <a href="images/Arman_Rakib_Android_dev_8_years.pdf" class="btn btn-outline download-cv" download="Arman_Rakib_Android_dev_8_years.pdf">Download CV <i class="fas fa-download"></i></a>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge glass fade-in-up">
+          <span class="pulse"></span>
+          Available for new opportunities
         </div>
-        <div class="about-stats" data-aos="fade-left" data-aos-delay="200">
-          <div class="stat">
-            <span class="stat-number">8+</span>
-            <span class="stat-title">Years Experience</span>
+        <h1 class="hero-title fade-in-up delay-1">
+          Building <span class="gradient-text">Exceptional</span><br>Mobile Experiences.
+        </h1>
+        <p class="hero-desc fade-in-up delay-2">
+          Hi, I'm <strong>Arman Rakib</strong>, a Senior Mobile Application Developer with 8+ years of experience. I specialize in Kotlin, Java, and React Native, delivering scalable and secure apps across healthcare, e-commerce, IoT, POS, AI, and social media domains.
+        </p>
+        <div class="hero-cta fade-in-up delay-3">
+          <a href="#projects" class="btn btn-primary">Explore Projects</a>
+          <a href="images/Arman_Rakib_Android_dev_8_years.pdf" class="btn btn-primary" download="Arman_Rakib_Android_dev_8_years.pdf">Download CV</a>
+          <a href="https://linkedin.com/in/arman-rakib-045ba1167" target="_blank" class="btn btn-secondary">LinkedIn</a>
+          <a href="https://github.com/armanrakib520" target="_blank" class="btn btn-secondary">GitHub</a>
+        </div>
+        <div class="hero-stats fade-in-up delay-4">
+          <div class="stat-item">
+            <h3 class="stat-num">8+</h3>
+            <p class="stat-label">Years of Experience</p>
           </div>
-          <div class="stat">
-            <span class="stat-number">20+</span>
-            <span class="stat-title">Projects Completed</span>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <h3 class="stat-num">20+</h3>
+            <p class="stat-label">Projects Delivered</p>
           </div>
-          <div class="stat">
-            <span class="stat-number">10+</span>
-            <span class="stat-title">Happy Clients</span>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <h3 class="stat-num">100%</h3>
+            <p class="stat-label">On-time Delivery</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section section-alt">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2>Technical Skills</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="skills-container">
-        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-          <h3>Languages</h3>
-          <div class="skill-item">
-            <span class="skill-name">Kotlin</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 95%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Java</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 95%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">TypeScript</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">JavaScript</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 85%"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-          <h3>Frameworks & Libraries</h3>
-          <div class="skill-item">
-            <span class="skill-name">Android SDK / Jetpack</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 95%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Jetpack Compose</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">React Native</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Retrofit / REST API</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 90%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Firebase</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 90%"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-          <h3>Architecture & Testing</h3>
-          <div class="skill-item">
-            <span class="skill-name">MVVM / SOLID</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 95%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">JUnit / Mockito</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Espresso</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 75%"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-          <h3>Specialized & Tools</h3>
-          <div class="skill-icons">
-            <div class="skill-icon" title="BLE & IoT">
-              <i class="fas fa-bluetooth-b"></i>
-              <span>BLE / IoT</span>
-            </div>
-            <div class="skill-icon" title="Payment Systems">
-              <i class="fas fa-credit-card"></i>
-              <span>Payments</span>
-            </div>
-            <div class="skill-icon" title="Biometric Auth">
-              <i class="fas fa-fingerprint"></i>
-              <span>Biometrics</span>
-            </div>
-            <div class="skill-icon" title="ESC/POS Printing">
-              <i class="fas fa-print"></i>
-              <span>POS Print</span>
-            </div>
-            <div class="skill-icon" title="Google Maps">
-              <i class="fas fa-map-marked-alt"></i>
-              <span>Google Maps</span>
-            </div>
-            <div class="skill-icon" title="Git">
-              <i class="fab fa-github"></i>
-              <span>Git / CI/CD</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2>Experience</h2>
-        <div class="underline"></div>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="section-header reveal">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">My career journey from junior developer to senior engineer.</p>
       </div>
       <div class="timeline">
-        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Sep 2025–Present</div>
-          <div class="timeline-content">
-            <h3>Senior Software Engineer</h3>
-            <p class="timeline-company">DataCrunch Ltd.</p>
-            <p>Leading mobile development for AmICredible, an AI-based real-time fact-checking platform using React Native (TypeScript) for both Android and iOS. Implemented Google Authentication, Google Maps API, Firebase services, PayPal integration, and robust REST APIs.</p>
+
+        <div class="timeline-item glass reveal">
+          <div class="timeline-header">
+            <div>
+              <h3 class="role">Senior Software Engineer</h3>
+              <h4 class="company">DataCrunch Ltd.</h4>
+            </div>
+            <span class="duration">Sep 2025 – Present</span>
           </div>
+          <ul class="timeline-details">
+            <li>Leading mobile development for AmICredible, an AI-based real-time fact-checking platform using React Native (TypeScript) for both Android and iOS.</li>
+            <li>Implemented Google Authentication, Google Maps API, Firebase services, PayPal integration, and robust REST APIs.</li>
+          </ul>
         </div>
 
-        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Jun 2023–Sep 2025</div>
-          <div class="timeline-content">
-            <h3>Software Engineer</h3>
-            <p class="timeline-company">Silicon Orchard Ltd.</p>
-            <p>Developed and optimized 3+ high-performance Android apps, reducing load times by 30%. Delivered 2 cross-platform React Native apps with 95% user satisfaction. Led 4+ end-to-end SDLC projects ensuring 100% on-time delivery, and raised crash-free rate to 95%+ across three underperforming apps.</p>
+        <div class="timeline-item glass reveal">
+          <div class="timeline-header">
+            <div>
+              <h3 class="role">Software Engineer</h3>
+              <h4 class="company">Silicon Orchard Ltd.</h4>
+            </div>
+            <span class="duration">Jun 2023 – Sep 2025</span>
           </div>
+          <ul class="timeline-details">
+            <li>Developed and optimized 3+ high-performance Android apps, reducing load times by 30%.</li>
+            <li>Delivered 2 cross-platform React Native apps, achieving 95% user satisfaction and reducing development time by 20%.</li>
+            <li>Led 4+ end-to-end SDLC projects ensuring 100% on-time delivery with minimal defects.</li>
+            <li>Improved crash-free rate to 95%+ across three previously underperforming apps.</li>
+          </ul>
         </div>
 
-        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Jan 2021–Jun 2023</div>
-          <div class="timeline-content">
-            <h3>Android Developer</h3>
-            <p class="timeline-company">Zaynax Group</p>
-            <p>Developed Zaynax Health with appointment booking, audio-video consultations, payments, and real-time chat. Enhanced security with SSLCommerz and biometric authentication, improved video consult stability by 70%, and maintained 98% crash-free rate. Awarded Employee of the Month (Jul 2022).</p>
+        <div class="timeline-item glass reveal">
+          <div class="timeline-header">
+            <div>
+              <h3 class="role">Android Developer</h3>
+              <h4 class="company">Zaynax Group</h4>
+            </div>
+            <span class="duration">Jan 2021 – Jun 2023</span>
           </div>
+          <ul class="timeline-details">
+            <li>Developed Zaynax Health with appointment booking, audio-video consultations, payments, and real-time chat.</li>
+            <li>Enhanced security with SSLCommerz payment gateway and biometric authentication.</li>
+            <li>Optimized data flows, improving real-time chat and video consult stability by 70%.</li>
+            <li>Maintained 98% crash-free rate. Awarded Employee of the Month (Jul 2022).</li>
+          </ul>
         </div>
 
-        <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Jul 2019–Dec 2020</div>
-          <div class="timeline-content">
-            <h3>Android Developer</h3>
-            <p class="timeline-company">pbazaar.com</p>
-            <p>Built and maintained Bangladesh's largest real-estate marketplace app. Improved onboarding with Google & Facebook Sign-in, increasing user registration by 25%. Contributed to a poultry management app with IoT device integration for smart farming.</p>
+        <div class="timeline-item glass reveal">
+          <div class="timeline-header">
+            <div>
+              <h3 class="role">Android Developer</h3>
+              <h4 class="company">pbazaar.com</h4>
+            </div>
+            <span class="duration">Jul 2019 – Dec 2020</span>
           </div>
+          <ul class="timeline-details">
+            <li>Built and maintained Bangladesh's largest real-estate marketplace app.</li>
+            <li>Improved onboarding with Google &amp; Facebook Sign-in, increasing user registration by 25%.</li>
+            <li>Contributed to a poultry management app with IoT device integration for smart farming.</li>
+          </ul>
         </div>
 
-        <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Jan 2019–Jun 2019</div>
-          <div class="timeline-content">
-            <h3>Junior Android Developer</h3>
-            <p class="timeline-company">Rongginn IT Ltd</p>
-            <p>Developed a launch tracking module with live GPS and Google Maps API. Implemented offline features including a dictionary app and store locator using SQLite &amp; Firebase.</p>
+        <div class="timeline-item glass reveal">
+          <div class="timeline-header">
+            <div>
+              <h3 class="role">Junior Android Developer</h3>
+              <h4 class="company">Rongginn IT Ltd</h4>
+            </div>
+            <span class="duration">Jan 2019 – Jun 2019</span>
           </div>
+          <ul class="timeline-details">
+            <li>Developed a launch tracking module with live GPS tracking and Google Maps API integration.</li>
+            <li>Implemented offline features (dictionary app, store locator) using SQLite &amp; Firebase.</li>
+          </ul>
         </div>
 
-        <div class="timeline-item" data-aos="fade-left" data-aos-delay="600">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">Feb 2018–Dec 2018</div>
-          <div class="timeline-content">
-            <h3>Junior Android Developer</h3>
-            <p class="timeline-company">MCC Ltd</p>
-            <p>Built Meena Game (UNICEF) to promote social awareness among children. Developed Multi-Channel and Single-Channel TV apps with live streaming functionality.</p>
+        <div class="timeline-item glass reveal">
+          <div class="timeline-header">
+            <div>
+              <h3 class="role">Junior Android Developer</h3>
+              <h4 class="company">MCC Ltd</h4>
+            </div>
+            <span class="duration">Feb 2018 – Dec 2018</span>
           </div>
+          <ul class="timeline-details">
+            <li>Built Meena Game (UNICEF) to promote social awareness among children.</li>
+            <li>Developed Multi-Channel and Single-Channel TV apps with live streaming functionality.</li>
+          </ul>
         </div>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section section-alt">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2>Featured Projects</h2>
-        <div class="underline"></div>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-header reveal">
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">Technologies, architectures, and tools I use to build robust mobile apps.</p>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category glass reveal">
+          <h3 class="skill-cat-title">Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Kotlin</span>
+            <span class="tag">Java</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal">
+          <h3 class="skill-cat-title">Frameworks &amp; Libraries</h3>
+          <div class="skill-tags">
+            <span class="tag">Android SDK</span>
+            <span class="tag">Jetpack Compose</span>
+            <span class="tag">Room</span>
+            <span class="tag">Hilt</span>
+            <span class="tag">Navigation</span>
+            <span class="tag">React Native</span>
+            <span class="tag">Retrofit</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal">
+          <h3 class="skill-cat-title">Architecture &amp; Testing</h3>
+          <div class="skill-tags">
+            <span class="tag">MVVM</span>
+            <span class="tag">MVC</span>
+            <span class="tag">SOLID Principles</span>
+            <span class="tag">JUnit</span>
+            <span class="tag">Mockito</span>
+            <span class="tag">Espresso</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal">
+          <h3 class="skill-cat-title">Payments &amp; Device Integration</h3>
+          <div class="skill-tags">
+            <span class="tag">WizarPOS</span>
+            <span class="tag">Dejavoo</span>
+            <span class="tag">Stripe</span>
+            <span class="tag">PayPal</span>
+            <span class="tag">SSLCommerz</span>
+            <span class="tag">bKash</span>
+            <span class="tag">Nagad</span>
+            <span class="tag">BLE &amp; IoT</span>
+            <span class="tag">ESC/POS Print</span>
+            <span class="tag">Star Printer SDK</span>
+            <span class="tag">SUNMI</span>
+            <span class="tag">Biometric Auth</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass reveal">
+          <h3 class="skill-cat-title">Tools &amp; DevOps</h3>
+          <div class="skill-tags">
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">GitLab</span>
+            <span class="tag">Bitbucket</span>
+            <span class="tag">Firebase CI/CD</span>
+            <span class="tag">Android Studio</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Google Maps API</span>
+            <span class="tag">Push Notifications</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="section-header reveal">
+        <h2 class="section-title">Key Projects</h2>
+        <p class="section-subtitle">Highlighting apps I've engineered for performance and scale.</p>
       </div>
       <div class="projects-grid">
-        <!-- Project 0 -->
-        <div class="project-card" data-aos="fade-up" data-project="amicredible">
-          <div class="project-image">
-            <img src="images/amicredible.png" alt="AmICredible - AI-based real-time fact-checking platform" loading="lazy" width="600" height="400">
-            <div class="project-overlay">
-              <div class="project-preview">
-                <span>View Project</span>
-              </div>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3>AmICredible</h3>
-            <p>AI-based real-time fact-checking platform with credibility scores, built with React Native for Android &amp; iOS.</p>
-            <div class="project-tags">
-              <span>React Native</span>
-              <span>TypeScript</span>
-              <span>AI</span>
+
+        <div class="project-card glass reveal">
+          <div class="project-content">
+            <span class="project-category">AI / Fact-Checking</span>
+            <h3 class="project-title">AmICredible</h3>
+            <p class="project-desc">AI-based real-time fact-checking platform with credibility scores. Built with React Native (TypeScript) for Android &amp; iOS with Google Auth, Maps API, Firebase, and PayPal.</p>
+            <div class="project-tech">
+              <span>React Native</span><span>TypeScript</span><span>Firebase</span><span>PayPal</span>
             </div>
           </div>
         </div>
 
-        <!-- Project 0b -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="50" data-project="6969">
-          <div class="project-image">
-            <img src="images/6969.webp" alt="6969: Spill Tea with Squad - Anti-social voice app" loading="lazy" width="600" height="400">
-            <div class="project-overlay">
-              <div class="project-preview">
-                <span>View Project</span>
-              </div>
+        <div class="project-card glass reveal">
+          <div class="project-content">
+            <span class="project-category">Social</span>
+            <h3 class="project-title">6969: Spill Tea with Squad</h3>
+            <p class="project-desc">Anti-social voice app for your real squad. No pics, no texts — just voice. Pure, unfiltered connection with the people who matter most.</p>
+            <div class="project-tech">
+              <span>Android</span><span>Kotlin</span><span>Voice</span>
             </div>
-          </div>
-          <div class="project-info">
-            <h3>6969: Spill Tea with Squad</h3>
-            <p>Anti-social voice app for your real squad. No pics, no texts — just voice. Pure, unfiltered connection.</p>
-            <div class="project-tags">
-              <span>Android</span>
-              <span>Voice</span>
-              <span>Social</span>
+            <div class="project-links-row">
+              <a href="https://play.google.com/store/apps/details?id=app.beats" target="_blank" class="btn btn-outline btn-sm">Play Store</a>
             </div>
           </div>
         </div>
 
-        <!-- Project 1 -->
-        <div class="project-card" data-aos="fade-up" data-project="zaynaxhealth">
-          <div class="project-image">
-            <img src="images/zaynax-thumbnail.webp" alt="Zaynax Health App - Healthcare app with doctor appointments and video consultations" loading="lazy" width="600" height="400">
-            <div class="project-overlay">
-              <div class="project-preview">
-                <span>View Project</span>
-              </div>
+        <div class="project-card glass reveal">
+          <div class="project-content">
+            <span class="project-category">Healthcare</span>
+            <h3 class="project-title">Zaynax Health</h3>
+            <p class="project-desc">Healthcare app with doctor appointment booking, audio-video consultations, SSLCommerz payments, biometric authentication, and real-time chat. 98% crash-free rate.</p>
+            <div class="project-tech">
+              <span>Android</span><span>Java/Kotlin</span><span>WebRTC</span><span>SSLCommerz</span>
             </div>
-          </div>
-          <div class="project-info">
-            <h3>Zaynax Health</h3>
-            <p>Healthcare app with doctor appointments, video consultations, and secure payments.</p>
-            <div class="project-tags">
-              <span>Android</span>
-              <span>Java</span>
-              <span>WebRTC</span>
+            <div class="project-links-row">
+              <a href="https://play.google.com/store/apps/details?id=zaynaxhealth.com" target="_blank" class="btn btn-outline btn-sm">Play Store</a>
             </div>
           </div>
         </div>
 
-        <!-- Project 2 -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-project="zdrop">
-          <div class="project-image">
-            <img src="images/zdrop.jpg" alt="zDrop E-commerce App - Online shopping platform with secure payments" loading="lazy" width="600" height="400">
-            <div class="project-overlay">
-              <div class="project-preview">
-                <span>View Project</span>
-              </div>
+        <div class="project-card glass reveal">
+          <div class="project-content">
+            <span class="project-category">E-Commerce</span>
+            <h3 class="project-title">zDrop</h3>
+            <p class="project-desc">E-commerce platform with secure transactions, seller-buyer real-time chat, and order tracking. Built with Kotlin and MVVM architecture on Firebase.</p>
+            <div class="project-tech">
+              <span>Kotlin</span><span>MVVM</span><span>Firebase</span>
             </div>
-          </div>
-          <div class="project-info">
-            <h3>zDrop</h3>
-            <p>E-commerce application with comprehensive product catalog, secure checkout, and in-app chat.</p>
-            <div class="project-tags">
-              <span>Kotlin</span>
-              <span>MVVM</span>
-              <span>Firebase</span>
+            <div class="project-links-row">
+              <a href="https://play.google.com/store/apps/details?id=com.zdrop.bd" target="_blank" class="btn btn-outline btn-sm">Play Store</a>
             </div>
           </div>
         </div>
 
-        <!-- Project 3 -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-project="meena">
-          <div class="project-image">
-            <img src="images/meet_meena.jpeg" alt="Meet Meena Game - UNICEF educational game for children" loading="lazy" width="600" height="400">
-            <div class="project-overlay">
-              <div class="project-preview">
-                <span>View Project</span>
-              </div>
+        <div class="project-card glass reveal">
+          <div class="project-content">
+            <span class="project-category">IoT / Agriculture</span>
+            <h3 class="project-title">Poultry Manager</h3>
+            <p class="project-desc">IoT-integrated farming app for real-time poultry management with BLE device communication, smart sensor data visualization, and offline support.</p>
+            <div class="project-tech">
+              <span>Android</span><span>BLE / IoT</span><span>MQTT</span>
             </div>
-          </div>
-          <div class="project-info">
-            <h3>Meet Meena</h3>
-            <p>UNICEF educational game focusing on awareness and learning for children.</p>
-            <div class="project-tags">
-              <span>Android</span>
-              <span>Game Dev</span>
-              <span>Education</span>
+            <div class="project-links-row">
+              <a href="https://play.google.com/store/apps/details?id=com.manufarms.poultrymanagerapp" target="_blank" class="btn btn-outline btn-sm">Play Store</a>
             </div>
           </div>
         </div>
 
-        <!-- Project 4 -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-project="poultry">
-          <div class="project-image">
-            <img src="images/poultry_manager.png" alt="Poultry Manager App - IoT-based farm management system" loading="lazy" width="600" height="400">
-            <div class="project-overlay">
-              <div class="project-preview">
-                <span>View Project</span>
-              </div>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3>Poultry Manager</h3>
-            <p>IoT-based farm management system for monitoring and controlling farm operations.</p>
-            <div class="project-tags">
-              <span>IoT</span>
-              <span>Real-time Data</span>
-              <span>Sensors</span>
+        <div class="project-card glass reveal">
+          <div class="project-content">
+            <span class="project-category">POS / Restaurant</span>
+            <h3 class="project-title">Mporeo</h3>
+            <p class="project-desc">Restaurant Management System with POS printing (ESC/POS, SUNMI), Stripe payment gateway, order management, and real-time reporting dashboard.</p>
+            <div class="project-tech">
+              <span>Android</span><span>Stripe</span><span>ESC/POS</span><span>SUNMI</span>
             </div>
           </div>
         </div>
+
+        <div class="project-card glass reveal">
+          <div class="project-content">
+            <span class="project-category">Printing / Utility</span>
+            <h3 class="project-title">MPOS Print Server</h3>
+            <p class="project-desc">Comprehensive Android app for managing and printing to Bluetooth, Network, and USB printers with advanced permission handling and notification support.</p>
+            <div class="project-tech">
+              <span>Android</span><span>Bluetooth</span><span>Network Print</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal">
+          <div class="project-content">
+            <span class="project-category">Transport / Ticketing</span>
+            <h3 class="project-title">MV Manami</h3>
+            <p class="project-desc">Ticket booking app with payment gateway integration, a launch tracking module with live GPS, and Google Maps API for real-time navigation.</p>
+            <div class="project-tech">
+              <span>Android</span><span>GPS</span><span>Google Maps</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass reveal">
+          <div class="project-content">
+            <span class="project-category">Event Management</span>
+            <h3 class="project-title">Event Attendee Manager</h3>
+            <p class="project-desc">React Native app for event creation, RSVP management, QR scan attendance, push notifications, comments, and community engagement features.</p>
+            <div class="project-tech">
+              <span>React Native</span><span>QR Scan</span><span>Push Notifications</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Project Modal -->
-  <div class="modal" id="project-modal">
-    <div class="modal-content">
-      <span class="modal-close">&times;</span>
-      <div class="modal-body">
-        <!-- Content will be dynamically inserted here -->
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="section-header reveal">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind or want to collaborate? Let's connect.</p>
       </div>
-    </div>
-  </div>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2>Get In Touch</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="contact-container">
-        <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+      <div class="contact-card glass reveal">
+        <div class="contact-info-grid">
           <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <h3>Location</h3>
-              <p>Dhaka, Bangladesh</p>
-            </div>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Mohammadpur, Dhaka, Bangladesh</span>
           </div>
           <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <h3>Email</h3>
-              <p><a href="mailto:armanrakib520@gmail.com">armanrakib520@gmail.com</a></p>
-            </div>
+            <span class="contact-label">Email</span>
+            <a href="mailto:armanrakib520@gmail.com" class="contact-value contact-link">armanrakib520@gmail.com</a>
           </div>
-          <div class="social-links">
-            <a href="https://linkedin.com/in/arman-rakib-045ba1167/" target="_blank" aria-label="LinkedIn" class="social-link">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/ArmanRakib520" target="_blank" aria-label="GitHub" class="social-link">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="#" target="_blank" aria-label="Twitter" class="social-link">
-              <i class="fab fa-twitter"></i>
-            </a>
+          <div class="contact-item">
+            <span class="contact-label">Phone</span>
+            <a href="tel:+8801747473856" class="contact-value contact-link">+880 1747 473856</a>
           </div>
         </div>
-        <form class="contact-form" data-aos="fade-left" data-aos-delay="200" action="https://formspree.io/f/your_formspree_id" method="POST">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <input type="hidden" name="_subject" value="Portfolio Contact Form">
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+        <div class="contact-socials">
+          <a href="https://linkedin.com/in/arman-rakib-045ba1167" target="_blank" class="social-link">LinkedIn</a>
+          <a href="https://github.com/armanrakib520" target="_blank" class="social-link">GitHub</a>
+          <a href="mailto:armanrakib520@gmail.com" class="social-link">Email</a>
+          <a href="images/Arman_Rakib_Android_dev_8_years.pdf" download="Arman_Rakib_Android_dev_8_years.pdf" class="social-link">Download CV</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
+    <!-- Footer -->
+    <footer class="footer">
       <div class="footer-content">
-        <div class="footer-logo">AR</div>
-        <p>&copy; 2026 Arman Rakib | All Rights Reserved</p>
+        <div class="footer-info">
+          <h2>Arman Rakib</h2>
+          <p>B.Sc. in Computer Science – National University, Dhaka (2017)</p>
+          <p>+880 1747 473856 | armanrakib520@gmail.com</p>
+          <p>Mohammadpur, Dhaka, Bangladesh</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://linkedin.com/in/arman-rakib-045ba1167" target="_blank" class="social-link">LinkedIn</a>
+          <a href="https://github.com/armanrakib520" target="_blank" class="social-link">GitHub</a>
+          <a href="mailto:armanrakib520@gmail.com" class="social-link">Email</a>
+        </div>
       </div>
-    </div>
-    <div class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
-      <i class="fas fa-arrow-up"></i>
-    </div>
-  </footer>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Arman Rakib. All rights reserved.</p>
+      </div>
+    </footer>
 
-  <!-- Project details templates (hidden) -->
-  <template id="project-zaynaxhealth">
-    <div class="project-details">
-      <h2>Zaynax Health</h2>
-      <img src="images/zaynax-detail.jpg" alt="Zaynax Health App Screenshot showing the main dashboard" class="project-banner" loading="lazy" width="800" height="450">
-      
-      <div class="project-section">
-        <h3>Overview</h3>
-        <p>Zaynax Health is a comprehensive healthcare application that connects patients with doctors for online consultations, appointment scheduling, and health monitoring.</p>
-      </div>
-      
-      <div class="project-section">
-        <h3>My Role</h3>
-        <p>Lead Android Developer responsible for architecting and building the core features of the application including video consultation system, secure payment integration, and appointment management.</p>
-      </div>
-      
-      <div class="project-section">
-        <h3>Technologies</h3>
-        <ul class="tech-list">
-          <li>Java/Kotlin</li>
-          <li>MVVM Architecture</li>
-          <li>WebRTC for video consultations</li>
-          <li>Retrofit for API consumption</li>
-          <li>Room Database for offline data</li>
-          <li>SSL Commerz payment integration</li>
-        </ul>
-      </div>
-      
-      <div class="project-section">
-        <h3>Challenges & Solutions</h3>
-        <p>One of the main challenges was implementing a reliable video consultation system that would work across various network conditions. I utilized WebRTC with adaptive bitrate streaming and implemented fallback mechanisms to ensure consultations could continue even in low-bandwidth scenarios.</p>
-        <p>Securing patient data was another critical challenge. I implemented end-to-end encryption for sensitive information and followed HIPAA-inspired guidelines for data handling and storage.</p>
-      </div>
-      
-      <div class="project-section">
-        <h3>Outcomes</h3>
-        <p>The app has been downloaded over 100,000 times on the Google Play Store, maintaining a 4.4-star rating. It successfully facilitated thousands of remote consultations, especially during the pandemic, providing essential healthcare access to people unable to visit hospitals physically.</p>
-      </div>
-      
-      <div class="project-links">
-        <a href="https://play.google.com/store/apps/details?id=zaynaxhealth.com" target="_blank" class="btn btn-primary">View on Play Store</a>
-      </div>
-    </div>
-  </template>
+  </main>
 
-  <template id="project-zdrop">
-    <div class="project-details">
-      <h2>zDrop</h2>
-      <img src="images/zdrop-detail.jpg" alt="zDrop App Screenshot showing product catalog" class="project-banner" loading="lazy" width="800" height="450">
-      
-      <div class="project-section">
-        <h3>Overview</h3>
-        <p>zDrop is an e-commerce platform offering a wide range of products with features like secure checkout, real-time order tracking, and in-app messaging with sellers.</p>
-      </div>
-      
-      <div class="project-section">
-        <h3>My Role</h3>
-        <p>Android Developer responsible for implementing the product catalog, shopping cart functionality, payment gateway integration, and chat system.</p>
-      </div>
-      
-      <div class="project-section">
-        <h3>Technologies</h3>
-        <ul class="tech-list">
-          <li>Kotlin</li>
-          <li>MVVM Architecture with LiveData</li>
-          <li>Firebase Realtime Database & Firestore</li>
-          <li>Firebase Cloud Messaging</li>
-          <li>Glide for image loading</li>
-          <li>Multiple payment gateway integrations</li>
-        </ul>
-      </div>
-      
-      <div class="project-section">
-        <h3>Challenges & Solutions</h3>
-        <p>Managing a large product catalog with efficient filtering and search capabilities was challenging. I implemented a combination of server-side filtering and local caching strategies to provide fast, responsive search results.</p>
-        <p>The real-time chat feature needed to be reliable and support media sharing. I utilized Firebase Realtime Database with custom offline support to ensure messages were never lost, even when connectivity was intermittent.</p>
-      </div>
-      
-      <div class="project-section">
-        <h3>Outcomes</h3>
-        <p>The app has become one of the leading e-commerce platforms in Bangladesh with over 50,000 active users. Order completion rates improved by 35% after implementing the streamlined checkout process I designed.</p>
-      </div>
-      
-      <div class="project-links">
-        <a href="https://play.google.com/store/apps/details?id=com.zdrop.bd" target="_blank" class="btn btn-primary">View on Play Store</a>
-      </div>
-    </div>
-  </template>
+  <div class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">&#8679;</div>
 
-  <template id="project-meena">
-    <div class="project-details">
-      <h2>Meet Meena</h2>
-      <img src="images/meena-detail.jpg" alt="Meet Meena Game Screenshot showing interactive gameplay" class="project-banner" loading="lazy" width="800" height="450">
-      
-      <div class="project-section">
-        <h3>Overview</h3>
-        <p>Meet Meena is an educational game developed in partnership with UNICEF to raise awareness on important social issues among children in a fun, interactive way.</p>
-      </div>
-      
-      <div class="project-section">
-        <h3>My Role</h3>
-        <p>Android Developer tasked with implementing game mechanics, interactive storytelling features, and ensuring an engaging user experience suitable for children.</p>
-      </div>
-      
-      <div class="project-section">
-        <h3>Technologies</h3>
-        <ul class="tech-list">
-          <li>Java</li>
-          <li>Android Animation Framework</li>
-          <li>SQLite for progress tracking</li>
-          <li>Custom 2D rendering for game elements</li>
-          <li>Offline content management</li>
-        </ul>
-      </div>
-      
-      <div class="project-section">
-        <h3>Challenges & Solutions</h3>
-        <p>Creating an engaging game that was both educational and entertaining for children required balancing fun gameplay with learning objectives. I worked closely with educational consultants to integrate learning milestones into the game progression.</p>
-        <p>Optimizing performance for lower-end devices common in rural areas was essential. I implemented efficient resource management and adaptive graphics quality to ensure smooth gameplay across all device tiers.</p>
-      </div>
-      
-      <div class="project-section">
-        <h3>Outcomes</h3>
-        <p>The game has been used in UNICEF's educational programs across South Asia, reaching over 200,000 children. Teachers reported increased engagement and better retention of important social concepts when using the game as a learning tool.</p>
-      </div>
-      
-      <div class="project-links">
-        <a href="https://play.google.com/store/apps/details?id=org.unicef.meenagame" target="_blank" class="btn btn-primary">View on Play Store</a>
-      </div>
-    </div>
-  </template>
-
-  <template id="project-poultry">
-    <div class="project-details">
-      <h2>Poultry Manager</h2>
-      <img src="images/poultry-detail.jpg" alt="Poultry Manager App Screenshot showing farm monitoring dashboard" class="project-banner" loading="lazy" width="800" height="450">
-      
-      <div class="project-section">
-        <h3>Overview</h3>
-        <p>Poultry Manager is an IoT-based farm management application that helps farmers monitor and control environmental conditions, feed distribution, and livestock health in real-time.</p>
-      </div>
-      
-      <div class="project-section">
-        <h3>My Role</h3>
-        <p>Android Developer responsible for creating the mobile interface that connects to IoT sensors and control systems, displaying real-time data and allowing remote farm management.</p>
-      </div>
-      
-      <div class="project-section">
-        <h3>Technologies</h3>
-        <ul class="tech-list">
-          <li>Java</li>
-          <li>MQTT Protocol</li>
-          <li>Bluetooth Low Energy</li>
-          <li>MPAndroidChart for data visualization</li>
-          <li>Room Database for offline operation</li>
-          <li>Background services for continuous monitoring</li>
-        </ul>
-      </div>
-      
-      <div class="project-section">
-        <h3>Challenges & Solutions</h3>
-        <p>Maintaining reliable connections to farm sensors in rural areas with poor connectivity was a significant challenge. I implemented a robust sync mechanism that could operate in offline mode and efficiently synchronize data when connectivity was available.</p>
-        <p>Creating an intuitive interface for farmers with varying levels of technical proficiency required multiple iterations of user testing. The final design used simple visual indicators and minimal text to convey system status and alert conditions.</p>
-      </div>
-      
-      <div class="project-section">
-        <h3>Outcomes</h3>
-        <p>Farms using the system reported a 25% reduction in mortality rates and 15% improvement in feed efficiency. The application has been adopted by over 200 farms across Bangladesh, significantly improving productivity and reducing operating costs.</p>
-      </div>
-      
-      <div class="project-links">
-        <a href="https://play.google.com/store/apps/details?id=com.manufarms.poultrymanagerapp" target="_blank" class="btn btn-primary">View on Play Store</a>
-      </div>
-    </div>
-  </template>
-
-  <template id="project-amicredible">
-    <div class="project-details">
-      <h2>AmICredible</h2>
-      <img src="images/amicredible-detail.jpg" alt="AmICredible App Screenshot" class="project-banner" loading="lazy" width="800" height="450">
-
-      <div class="project-section">
-        <h3>Overview</h3>
-        <p>AmICredible is an AI-based real-time fact-checking platform that assigns credibility scores to news and claims, helping users cut through misinformation instantly.</p>
-      </div>
-
-      <div class="project-section">
-        <h3>My Role</h3>
-        <p>Senior Software Engineer at DataCrunch Ltd., leading mobile development for both Android and iOS platforms using React Native (TypeScript).</p>
-      </div>
-
-      <div class="project-section">
-        <h3>Technologies</h3>
-        <ul class="tech-list">
-          <li>React Native (TypeScript)</li>
-          <li>Google Authentication</li>
-          <li>Google Maps API</li>
-          <li>Firebase (Auth, Firestore, Cloud Messaging)</li>
-          <li>PayPal Integration</li>
-          <li>REST APIs</li>
-        </ul>
-      </div>
-
-      <div class="project-section">
-        <h3>Outcomes</h3>
-        <p>Currently in active development, targeting simultaneous launch on Google Play Store and Apple App Store.</p>
-      </div>
-    </div>
-  </template>
-
-  <template id="project-6969">
-    <div class="project-details">
-      <h2>6969: Spill Tea with Squad</h2>
-      <img src="images/6969-detail.jpg" alt="6969 App Screenshot" class="project-banner" loading="lazy" width="800" height="450">
-
-      <div class="project-section">
-        <h3>Overview</h3>
-        <p>6969 is the anti-social app for your real squad. Stop scrolling through fake photos and filtered lives — no pics, no texts, just voice. Pure, unfiltered connection with the people who matter.</p>
-      </div>
-
-      <div class="project-section">
-        <h3>My Role</h3>
-        <p>Android Developer responsible for building and publishing the app on the Google Play Store.</p>
-      </div>
-
-      <div class="project-section">
-        <h3>Technologies</h3>
-        <ul class="tech-list">
-          <li>Android (Kotlin)</li>
-          <li>Voice / Audio Streaming</li>
-          <li>Firebase</li>
-          <li>Push Notifications</li>
-        </ul>
-      </div>
-
-      <div class="project-links">
-        <a href="https://play.google.com/store/apps/details?id=app.beats" target="_blank" class="btn btn-primary">View on Play Store</a>
-      </div>
-    </div>
-  </template>
-
-  <!-- Scripts with defer for performance -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>
